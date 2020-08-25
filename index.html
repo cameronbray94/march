@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cameron Bray</title>
+    <meta name="author" content="Sam Green">
+    <meta name="description" content="Camerons Portfolio">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/myfavicon.png" sizes="96x96">  
+  </head>
+
+  <body>
+    <!-- <div id="navbar">
+      <a href="index.html">
+        <div class="nav-item">CAMERON BRAY</div>
+      </a>
+    </div> -->
+    <div id="nowrapper">
+      <!-- <div class="embeddedObservable" id="observablehq-741ad44a"></div> -->
+      <div class="embeddedObservable" id="observablehq-f6999f2f" style="width:100%"></div>
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@cameronbray/website-homepage-test.js?v=3";
+      const inspect = Inspector.into("#observablehq-f6999f2f");
+      (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+      </script>
+  </body>
+</html>
