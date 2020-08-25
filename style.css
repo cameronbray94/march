@@ -67,29 +67,50 @@ body {
 }
 
 h1 {
-  font-family: 'AO Mono', sans-serif;
+  font-family: 'Inter Regular', sans-serif;
   font-weight: 900;
-  color: #ED1B58;
+  color: #ff6101;
   font-size:120px;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+h1:hover {
+  color: blue;
+}
+
+h1:link, {
+  color: #ff6101;
+}
+
+h1:visited {
+  color: #ff6101;
 }
 
 h2 {
   font-family: 'Inter Regular', sans-serif;
-  font-weight: 1000;
+  font-weight: 900;
+  font-size:20px;
 }
 
 h3 {
-  font-family: 'AO Mono', sans-serif;
+  font-family: 'Inter Regular', sans-serif;
   font-weight: 900;
-  color: #ED1B58;
-  font-size:80px;
+  color: #ff6101;
+  font-size:30px;
+}
+
+h3:visited {
+  color: #ff6101;
 }
 
 
 p {
   font-family: 'Inter SemiBold', sans-serif;
   font-weight: 900;
-  color: black;
+  color: black ;
   text-align: center;
 }
 
@@ -182,6 +203,7 @@ p2 {
   color: #fce406;
   top: 10;
   left: 10;
+  bottom: 10;
   width: 100%;
   height: 70px;
   align-items: center;
@@ -201,7 +223,7 @@ p2 {
 .nav-item2 {
   margin: 10px;
   text-decoration: none;
-  color: #fce406;
+  color: #ff6101;
   font-size: 50px;
   text-align: center;
   text-decoration: none;
@@ -467,11 +489,23 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 0px;
-  border: 2px solid #4a4a4a;
+  border: 4px solid #353535;
   padding: 1em 1em;
-  background: #fff200;
+  background: #ff6101;
   opacity: .95;
-  box-shadow: 0 0 0 2px #fff200, 0 0 0 6px #fff200;
+  /*  box-shadow: 9px 9px 0px #4a4a4a; */
+  box-shadow: 0 0 0 2px #ff6101, 0 0 0 6px #ff6101;
+}
+
+.desktopWindowBordernav {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
+  text-align: left;
+  /* background: #ff6101;*/
+  opacity: .95;
+  /*  box-shadow: 9px 9px 0px #4a4a4a; */
+  /* box-shadow: 0 0 0 2px #ff6101, 0 0 0 6px #ff6101; */
 }
 
 .desktopWindowHeader {
@@ -569,6 +603,15 @@ a {
   text-justify: inter-word;
 }
 
+.myTextnav {
+  padding: 10px;
+  text-align: left;
+}
+
+.myTextnav > p {
+  text-align: left;
+}
+
 #makeBigger {
   width: 150%;
   position: center;
@@ -576,15 +619,15 @@ a {
 }
 
 #intro {
-  top: 20%;
-  left: 10%;
+  top: 22%;
+  left: 25%;
   position: absolute;
   z-index: 15;
 }
 
 #navigation {
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 0%;
   position: absolute;
   z-index: 15;
 }
