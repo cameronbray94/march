@@ -13,17 +13,17 @@
        font-style: normal;
       }
 
-      @font-face {
-        font-family: 'redaction 35';
-        src:url('/fonts/Redaction_35-Regular.woff2') format('woff2'),
-            url('/fonts/Redaction_35-bold.woff2') format('woff2'),
-            url('/fonts/Redaction_35-italic.woff2') format('woff2'),
-            url('/fonts/Redaction35-Regular.otf')  format('truetype'),
-            url('/fonts/Redaction35-italic.otf')  format('truetype'),
-            url('/fonts/Redaction35-bold.otf')  format('truetype'),
-             font-weight: 900;
-             font-style: normal;
-            }
+@font-face {
+  font-family: 'redaction 35';
+   src:url('/fonts/Redaction_35-Regular.woff2') format('woff2'),
+      url('/fonts/Redaction_35-bold.woff2') format('woff2'),
+      url('/fonts/Redaction_35-italic.woff2') format('woff2'),
+      url('/fonts/Redaction35-Regular.otf')  format('truetype'),
+      url('/fonts/Redaction35-italic.otf')  format('truetype'),
+      url('/fonts/Redaction35-bold.otf')  format('truetype'),
+      font-weight: 900;
+      font-style: normal;
+      }
 
 @font-face {
   font-family: 'Inter SemiBold';
@@ -34,6 +34,14 @@
        font-weight: 900;
        font-style: normal;
       }
+
+@font-face {
+  font-family: 'European Teletext';
+  src: url('/fonts/EuropeanTeletext.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/EuropeanTeletext.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: 900;
+       font-style: normal;
+      }      
 
 @font-face {
   font-family: 'AO Mono';
@@ -56,6 +64,12 @@
   font-style: normal;
 }
 
+a:hover {
+  color: blue;
+}
+
+a:visited {color: inherit}
+
 header {
   font-family: 'AO Mono', sans-serif;
   margin: 0px;
@@ -67,15 +81,15 @@ body {
 }
 
 h1 {
-  font-family: 'Inter Regular', sans-serif;
+  font-family: 'European Teletext', sans-serif;
   font-weight: 900;
   color: #ff6101;
   font-size:120px;
 }
 
- h1:hover {
+ /* h1:hover {
   color: blue;
-}
+} */
 
 h1:visited {
   color: #ff6101;
@@ -89,14 +103,10 @@ h2 {
 
 h3 {
   font-family: 'Inter Regular', sans-serif;
-  font-weight: 900;
+  font-weight: 1200;
   color: #ff6101;
   font-size:30px;
 }
-
- h3:hover {
-  color: blue;
-} 
 
 p {
   font-family: 'Inter SemiBold', sans-serif;
@@ -104,12 +114,6 @@ p {
   color: black ;
   text-align: center;
 }
-
-a { color: inherit;}
-
-a:hover { color: blue;}
-
-a:visited {color: inherit}
 
 
 p2 {
@@ -636,4 +640,60 @@ a {
   left: 50%;
   position: absolute;
   z-index: 100;
+}
+
+#remote {
+  top: 60%;
+  left: 2%;
+  position: absolute;
+  z-index: 70;
+}
+
+#manifesto {
+  top: 5%;
+  left: 40%;
+  position: absolute;
+  z-index: 5;
+}
+
+#manifesto6 {
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  z-index: 6;
+}
+
+#manifesto7 {
+  top: 20%;
+  left: 40%;
+  position: absolute;
+  z-index: 7;
+}
+
+#manifesto8 {
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  z-index: 8;
+}
+
+#manifesto9 {
+  top: 30%;
+  left: 30%;
+  position: absolute;
+  z-index: 9;
+}
+
+#manifesto10 {
+  top: 80%;
+  left: 70%;
+  position: absolute;
+  z-index: 10;
+}
+
+#manifesto11 {
+  top: 60%;
+  left: 72%;
+  position: absolute;
+  z-index: 11;
 }
