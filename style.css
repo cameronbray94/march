@@ -140,7 +140,7 @@ p > a {
 }
 
 p > a:hover {
-  color: #ff6101;
+  color: red;
 }
 
 
@@ -333,9 +333,9 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(50%);
-  filter: blur(10px);
-  filter: contrast(80%);
+  filter: brightness(40%);
+  filter: blur(0px);
+  filter: contrast(100%);
 }
 
 
@@ -492,11 +492,13 @@ a {
   position:relative;
   width: 270px;
   height: 203px;
+  cursor: move;
 }
 
 #draggable {
   background-color: #ccc;
   border: 6px solid #000;
+  cursor: move;
 }
 
 .marchbox {
@@ -508,6 +510,7 @@ a {
   cursor: grab;
   opacity: .95;
   box-shadow: 0 0 0 2px hsl(0, 0%, 0%), 0 0 0 6px hsl(0, 0%, 95%);
+  cursor: move;
 }
 
 .desktopWindowBorder {
@@ -520,6 +523,7 @@ a {
   opacity: .95;
   /*  box-shadow: 9px 9px 0px #4a4a4a; */
   box-shadow: 0 0 0 2px #ff6101, 0 0 0 6px #ff6101;
+  cursor: move;
 }
 
 .desktopWindowBordernav {
