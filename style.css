@@ -294,6 +294,7 @@ a {
 .embeddedObservable {
   width: 100%;
   margin: auto 0;
+  z-index: 150;
 }
 
 .basic-wrapper {
@@ -443,13 +444,8 @@ a {
 
 .twitch-container {
   position:center;
-  padding-bottom:0px;
-  border-top: 0px;
-  padding-top:0px;
-  height:100%;
-  width:100%;
   overflow:hidden;
-  z-index: 20;
+  z-index: 10;
 }
 
 .audio-icon {
