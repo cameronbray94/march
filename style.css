@@ -120,19 +120,19 @@ p2 {
 }
 
 .nav-item2 > a {
-  color: #011cc9;
+  color: black;
 }
 
 .nav-item2 > a:hover {
-  color: #ff6101;
-}
-
-h3 > a {
   color: #011cc9;
 }
 
+h3 > a {
+  color: black;
+}
+
 h3 > a:hover {
-  color: #ff6101;
+  color: #011cc9;
 }
 
 p > a {
@@ -140,7 +140,7 @@ p > a {
 }
 
 p > a:hover {
-  color: red;
+  color: #011cc9;
 }
 
 
@@ -722,4 +722,11 @@ a {
   left: 72%;
   position: absolute;
   z-index: 11;
+}
+
+#csmbbc {
+  top: 1%;
+  right: 1%;
+  position: absolute;
+  z-index: 500;
 }
