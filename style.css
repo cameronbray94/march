@@ -68,8 +68,6 @@ a:hover {
   color: blue;
 }
 
-a:visited {color: inherit}
-
 header {
   font-family: 'AO Mono', sans-serif;
   margin: 0px;
@@ -86,14 +84,9 @@ h1 {
   color: #ff6101;
   font-size:120px;
 }
-
- /* h1:hover {
+/* a:hover {
   color: blue;
 } */
-
-h1:visited {
-  color: #ff6101;
-}
 
 h2 {
   font-family: 'Inter Regular', sans-serif;
@@ -102,11 +95,15 @@ h2 {
 }
 
 h3 {
-  font-family: 'Inter Regular', sans-serif;
-  font-weight: 1200;
+  font-family: 'European Teletext', sans-serif;
+  font-weight: 1800;
   color: #ff6101;
   font-size:30px;
 }
+
+/* h3:visited {
+  color: #ff6101;
+} */
 
 p {
   font-family: 'Inter SemiBold', sans-serif;
@@ -120,6 +117,30 @@ p2 {
   font-family: 'Inter SemiBold', sans-serif;
   font-weight: 1500;
   color: #0023ff;
+}
+
+.nav-item2 > a {
+  color: blue;
+}
+
+.nav-item2 > a:hover {
+  color: #ff6101;
+}
+
+h3 > a {
+  color: blue;
+}
+
+h3 > a:hover {
+  color: #ff6101;
+}
+
+p > a {
+  color: blue;
+}
+
+p > a:hover {
+  color: #ff6101;
 }
 
 
@@ -297,15 +318,27 @@ a {
   width: 100%;
   display: flex;
   min-height: 100%;
-  background-color: #353535;
-  background:url('img/static/static11.gif');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   max-width: 100%;
   height: auto;
   z-index: 1;
 }
+
+.staticbackground::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:url('img/static/static11.gif');
+  background-color: #353535;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  filter: blur(10px);
+  filter: contrast(80%);
+}
+
+
 
 .bodyWithHeaderSillygreen {
   width: 100%;
@@ -316,17 +349,6 @@ a {
   flex-direction: column;
   background-color: #c6d92c;
   color: #ED1B58;
-  font-size:70px;
-}
-
-.MArchyellow {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  min-height: 100%;
-  align-items: center;
-  flex-direction: column;
-  background-color:#fff200;
   font-size:70px;
 }
 
