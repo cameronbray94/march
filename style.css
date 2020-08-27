@@ -693,6 +693,20 @@ a {
   z-index: 12;
 }
 
+#schedule {
+  top: 70%;
+  left: 20%;
+  position: absolute;
+  z-index: 13;
+}
+
+#antenna {
+  bottom: 0%;
+  left: 10%;
+  position: absolute;
+  z-index: 14;
+}
+
 @media screen and (max-width: 910px) {
   #csmbbc {
     display: none;
