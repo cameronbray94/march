@@ -1,0 +1,101 @@
+<html>
+<!-- html tags go on the outside -->
+
+  <head>
+    <!-- this is the core bits that tell the page stuff like favicon and title and link in your styles via css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MArch.20</title>
+    <meta name="author" content="Sam Green">
+    <meta name="description" content="Bray Folio">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/myfavicon.png" sizes="96x96">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <!-- All html files have a head ^^ above, and a body. Here! -->
+
+    <div id="navbar">
+        <h1 class="nav-item2"> <a href="index.html">MArch</a><a href="index.html">.broadcast </a>
+        </h1>
+    </div>
+
+    <div id="navigation" class="boxnav smallWindow">
+      <div class="desktopWindowBody">
+        <div class="myText">
+                  <h3> <span style="color: #ff0000"> <a href="manifesto.html"> SCHEDULE</a> <br> </span>
+                       <span style="color: #00ff00"> <a href="tv.html"> TV </a> <br> </span>
+                       <span style="color: #1100ff"> <a href="fm.html"> RADIO </a> <br> </span>
+                       <a href="archive.html"> ARCHIVE</a> <br>
+        </div>
+     </div>
+    </div>
+
+    <video autoplay muted loop id="video-container">
+        <source src="img/vid/testcard.mp4" type="video/mp4">
+    </video>
+
+
+       <div id="intro" class="boxwhite mediumWindow dragFolder">
+          <div class="desktopWindowBody">
+            <div class="myText">
+                <p> 
+                  This website is a record of the work of MArch students from Central Saint Martins in the summer of 2020.<br><br>
+                  It's centred on a rewriting of the Spatial Practices <span style="color: red">manifesto</span>, making fluid a static document. We address the emergence of new ways of building, living and organising.<br><br>
+                  On the 23/09/20 it will transform into a <span style="color: #00ff00">television</span> and <span style="color: #0124ff">radio</span> station to broadcast a number of messages from the course, which will then be archived on the site along with other work.<br>
+            </div>
+        </div>
+      </div>
+
+      <div id="chatango" class="boxwhite chatangoWindow dragFolder">
+        <div class="desktopWindowBody">
+          <script id="cid0020000259508778443" data-cfasync="false" async src="http://st.chatango.com/js/gz/emb.js" style="width: 250px;height: 350px;">{"handle":"csmmarch","arch":"js","styles":{"a":"e5e5e5","b":100,"c":"000000","d":"000000","e":"c0c0c0","h":"bbbbbb","k":"e5e5e5","l":"e5e5e5","m":"e5e5e5","p":"10","q":"e5e5e5","r":100,"t":0,"ab":false,"usricon":0,"surl":0,"allowpm":0,"fwtickm":1}}</script>
+        </div>
+      </div>
+
+      <div id="remote" class="imageContainer dragFolder">
+        <img src="img/remote.png" alt="folder" style="width:300px">
+      </div>
+
+      <div id="csmbbc" class="imageContainer">
+        <a href="https://www.instagram.com/csm_architecture_march/" target="_blank"> <img src="img/CSMBBC.png" alt="folder" style="width:160px"> </a>
+      </div>
+    </div>  
+
+    <script>
+        // Wait for window load
+      $(window).on('load', function(){
+      // Animate loader off screen
+      $(".dragFolder").draggable(
+          { cursor: "crosshair" }
+      );
+      // on clicking, brings the clicked item to the front
+      $('.dragFolder').click( function(){
+        $(this).css('z-index', 100);
+        $(this).siblings('.dragFolder').css('z-index', 1);
+      });
+      // red dot close
+      $('.redDot').click( function(){
+        $(this).parents('.dragFolder').fadeOut();
+      });
+      $('.refresh').click( function(){
+        $('.dragFolder').show();
+      });
+      // yellow dot minimise / maximise
+      $('.yellowDot').click( function(){
+        if ( $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').css('display') == 'none' ){
+          $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').show();
+          $(this).parents('.dragFolder').css('height', 'auto')
+        } else {
+          $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').fadeOut();
+          $(this).parents('.dragFolder').css('height', '24px')
+      }
+      });
+      });
+      </script>
+
+  </body>
+
+</html>

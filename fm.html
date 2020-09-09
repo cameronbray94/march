@@ -18,25 +18,26 @@
     <!-- All html files have a head ^^ above, and a body. Here! -->
 
     <div id="navbar">
-        <h1 class="nav-item2"> <a href="index.html">MARCH</a><a href="fm.html">.fm </a>
+        <h1 class="nav-item2"> <a href="index.html">MArch.</a><span style="color: blue"><a href="index.html">fm </a></span>
         </h1>
     </div>
 
-    <div id="navigation" class="desktopWindowBordernav smallWindow">
-        <div class="desktopWindowBody">
-          <div class="myText">
-                    <h3> <a href="manifesto.html"> MANIFESTO</a> <br><br>
-                         <a href="tv.html"> TV </a> <br><br>
-                         <a href="archive.html"> ARCHIVE</a> <br><br>
-          </div>
-       </div>
-      </div>
+    <div id="navigation" class="boxnav smallWindow">
+      <div class="desktopWindowBody">
+        <div class="myText">
+                  <h3> <span style="color: red"> <a href="manifesto.html"> SCHEDULE</a> <br> </span>
+                       <span style="color: green"> <a href="tv.html"> TV </a> <br> </span>
+                       <a href="archive.html"> ARCHIVE</a> <br>
+        </div>
+     </div>
+    </div>
+
 
 
     <div class="staticbackground">
 
 
-      <div id="intro" class="desktopWindowBorder mediumWindow dragFolder">
+      <div id="intro" class="boxblue mediumWindow dragFolder">
           <div class="desktopWindowBody">
             <div class="myText">
                 <p> 
@@ -45,47 +46,66 @@
         </div>
       </div>
 
-     <div id="chatbox" class="dragFolder">
-     </div>
+      <div id="chatango" class="boxblue chatangoWindow dragFolder">
+        <div class="desktopWindowBody">
+            <script id="cid0020000259508778443" data-cfasync="false" async src="http://st.chatango.com/js/gz/emb.js" style="width: 250px;height: 350px;">{"handle":"csmmarch","arch":"js","styles":{"a":"0023ff","b":100,"c":"000000","d":"000000","e":"c0c0c0","h":"bbbbbb","k":"0023ff","l":"0023ff","m":"0023ff","p":"10","q":"0023ff","r":100,"t":0,"ab":false,"usricon":0,"surl":0,"allowpm":0,"fwtickm":1}}</script>
+        </div>
+      </div>
+
+      <div id="soundcloud" class="boxblue dragFolder">
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/889900228&color=%230023ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/valeria-sapigni" title="Valeria Sapigni" target="_blank" style="color: #cccccc; text-decoration: none;"></div>
+      </div>
 
      <div id="csmbbc" class="imageContainer">
         <a href="https://www.instagram.com/csm_architecture_march/" target="_blank"> <img src="img/CSMBBC.png" alt="folder" style="width:160px"> </a>
       </div>
 
+      <div id="antenna" class="imageContainer dragFolder">
+        <img src="img/antenna1.png" alt="folder" style="width:110px">
+      </div>
+
+      <div id="countdown" class="boxempty dragFolder">
+        <iframe src="http://free.timeanddate.com/countdown/i7g99ox7/n136/cf12/cm0/cu3/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fn3/fs80/szw448/szh189/iso2020-09-23T15:00:00" allowTransparency="true" frameborder="0" width="96" height="33"></iframe>
+      </div>
+
     </div>
 
     <script>
-        // Wait for window load
-      $(window).on('load', function(){
-      // Animate loader off screen
-      $(".dragFolder").draggable(
-          { cursor: "crosshair" }
-      );
-      // on clicking, brings the clicked item to the front
-      $('.dragFolder').click( function(){
-        $(this).css('z-index', 100);
-        $(this).siblings('.dragFolder').css('z-index', 1);
-      });
-      // red dot close
-      $('.redDot').click( function(){
-        $(this).parents('.dragFolder').fadeOut();
-      });
-      $('.refresh').click( function(){
-        $('.dragFolder').show();
-      });
-      // yellow dot minimise / maximise
-      $('.yellowDot').click( function(){
-        if ( $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').css('display') == 'none' ){
-          $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').show();
-          $(this).parents('.dragFolder').css('height', 'auto')
-        } else {
-          $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').fadeOut();
-          $(this).parents('.dragFolder').css('height', '24px')
-      }
-      });
-      });
-      </script>
+      // Wait for window load
+    $(window).on('load', function(){
+    // Animate loader off screen
+    $(".dragFolder").draggable(
+        { cursor: "crosshair" }
+    );
+    $('.dragFolder').draggable({
+      containment: 'window',
+       scroll: false
+    });
+    // on clicking, brings the clicked item to the front
+    $('.dragFolder').click( function(){
+      $(this).css('z-index', 100);
+      $(this).siblings('.dragFolder').css('z-index', 1);
+    });
+    // red dot close
+    $('.redDot').click( function(){
+      $(this).parents('.dragFolder').fadeOut();
+    });
+    $('.refresh').click( function(){
+      $('.dragFolder').show();
+    });
+    // yellow dot minimise / maximise
+    $('.yellowDot').click( function(){
+      if ( $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').css('display') == 'none' ){
+        $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').show();
+        $(this).parents('.dragFolder').css('height', 'auto')
+      } else {
+        $(this).parents('.desktopWindowHeader').siblings('.desktopWindowBody').fadeOut();
+        $(this).parents('.dragFolder').css('height', '24px')
+    }
+    });
+    });
+    </script>
 
-  </body>
+</body>
 
 </html>
