@@ -35,6 +35,41 @@
 
     <div class="staticbackground">
  
+    <div id="timerbottomright">
+        <p id="demo"></p>
+                <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Sep 23, 2020 15:00:00").getTime();
+    
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+    
+                  // Get today's date and time
+                  var now = new Date().getTime();
+    
+                  // Find the distance between now and the count down date
+                  var distance = countDownDate - now;
+    
+                  // Time calculations for days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                  // Display the result in the element with id="demo"
+                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m "+ seconds + "s ";
+    
+                  // If the count down is finished, write some text
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+          </div>
+
+
       <div id="manifesto6" class="boxred smallwindow dragFolder">
           <div class="desktopWindowBody">
             <div class="myText">
@@ -50,10 +85,6 @@
 
       <div id="csmbbc" class="imageContainer">
         <a href="https://www.instagram.com/csm_architecture_march/" target="_blank"> <img src="img/CSMBBC.png" alt="folder" style="width:160px"> </a>
-      </div>
-
-      <div id="countdown" class="boxempty dragFolder">
-        <iframe src="http://free.timeanddate.com/countdown/i7g99ox7/n136/cf12/cm0/cu3/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fn3/fs80/szw448/szh189/iso2020-09-23T15:00:00" allowTransparency="true" frameborder="0" width="96" height="33"></iframe>
       </div>
 
     </div>

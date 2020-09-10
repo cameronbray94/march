@@ -766,6 +766,13 @@ a {
   z-index:3;
 }
 
+#timerbottomright {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  z-index:100;
+}
+
 #navigation {
   top: 40px;
   left: 10px;
