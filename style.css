@@ -401,7 +401,6 @@ a {
   background: url(img/backgroundgrey.jpg);
   background-color: lightgrey;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 910px;
@@ -414,7 +413,7 @@ a {
   display: flex;.staticbackground {
   width: 100%;
   display: flex;
-  background-attachment: fixed;
+  background-size: cover;
   min-height: 100%;
   max-width: 100%;
   min-width: 910px;
