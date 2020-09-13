@@ -373,24 +373,6 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 910px) {
-  .staticbackground {
-    display:none;
-  }
-}
-
-@media screen and (min-width: 910px) {
-  .body {
-    background-color: #cccccc;
-  }
-}
-
-@media screen and (max-width: 910px) {
-  .body {
-    background-color:#cccccc;
-  }
-}
-
 .staticbackground::before {
   content: "";
   position: absolute;
@@ -405,6 +387,7 @@ a {
   background-size: cover;
   min-width: 910px;
   z-index: -1;
+  overflow-y: auto;
 }
 
 .staticbackground {
@@ -806,9 +789,9 @@ a {
   z-index:100;
 }
 
-#timerbottomright2 {
+#timerbottomleft {
   position: absolute;
-  right: 10px;
+  left: 2px;
   bottom: 0px;
   z-index:100;
 }
@@ -895,6 +878,13 @@ a {
 #csmbbc {
   top: 10px;
   right: 10px;
+  position: absolute;
+  z-index: 500;
+}
+
+#csmbbcmobile {
+  bottom: 5px;
+  right: 5px;
   position: absolute;
   z-index: 500;
 }
@@ -986,13 +976,19 @@ a {
 }
 
 @media screen and (min-width: 910px) {
+  #csmbbcmobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 910px) {
   #intromobile {
     display: none;
   }
 }
 
 @media screen and (min-width: 910px) {
-  #timerbottomright2 {
+  #timerbottomleft > #demo {
     display: none;
   }
 }
