@@ -781,6 +781,16 @@ a {
   z-index:120
 }
 
+#intromobile {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  right: 20px;
+  text-align: justify;
+  z-index: 15;
+  width: 100%;
+}
+
 #timer {
   position: absolute;
   left: 30px;
@@ -790,6 +800,13 @@ a {
 }
 
 #timerbottomright {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  z-index:100;
+}
+
+#timerbottomright2 {
   position: absolute;
   right: 10px;
   bottom: 0px;
@@ -944,65 +961,56 @@ a {
   z-index: 10;
 }
 
-
-
 @media screen and (max-width: 910px) {
   #csmbbc {
     display: none;
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1100px) {
   #remote {
     display: none;
   }
 }
 
-@media only screen and (max-width: 910px) {
-  #navigation {
-    top: 50px;
-    left: 2px;
-    font-size: 10;
+@media screen and (max-width: 910px) {
+  .staticbackground {
+    display: none;
   }
 }
 
-/* OUTER CONTAINER */
-.tcontainer {
-  width: 100%;
-  height: 40px;
-  bottom: 0px;
-  overflow: hidden; /* Hide scroll bar */
-}
- 
-/* MIDDLE CONTAINER */
-.ticker-wrap {
-  width: 100%;
-  padding-left: 100%; /* Push contents to right side of screen */
-  background-color: #fff200;
+@media screen and (max-width: 910px) {
+  #intro {
+    display: none;
+  }
 }
 
-/* INNER CONTAINER */
-@keyframes ticker {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-100%, 0, 0); }
-}
-.ticker-move {
-  /* Basically move items from right side of screen to left in infinite loop */
-  display: inline-block;
-  white-space: nowrap;
-  padding-right: 100%;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-name: ticker;
-  animation-duration: 30s;
-}
-.ticker-move:hover{
-  animation-play-state: paused; /* Pause scroll on mouse hover */
+@media screen and (min-width: 910px) {
+  #intromobile {
+    display: none;
+  }
 }
 
-/* ITEMS */
-.ticker-item{
-  display: inline-block; /* Lay items in a horizontal line */
-  padding: 0px;
-  position: center;
+@media screen and (min-width: 910px) {
+  #timerbottomright2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  #timer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #chatango {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  #boxempty {
+    display: none;
+  }
 }

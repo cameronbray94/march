@@ -69,6 +69,40 @@
                 </script>
           </div>
 
+          <div id="timerbottomright2">
+            <p id="demo"></p>
+                    <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Sep 23, 2020 15:00:00").getTime();
+        
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+        
+                      // Get today's date and time
+                      var now = new Date().getTime();
+        
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+        
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                      // Display the result in the element with id="demo"
+                      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                      + minutes + "m "+ seconds + "s ";
+        
+                      // If the count down is finished, write some text
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                      }
+                    }, 1000);
+                    </script>
+              </div>
+
        <div id="intro" class="boxempty mediumWindow">
           <div class="desktopWindowBody">
             <div class="myText">
@@ -81,20 +115,13 @@
         </div>
       </div>
 
-      <!--<div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
-        <div class="ticker-item"> <p> CSM MArch NEWS</div>
-        <div class="ticker-item"> <p>15 days until broadcast</div>
-        <div class="ticker-item"> <p> watch this space</div>
-        <div class="ticker-item"> <p>programme incoming</div>
-      </div></div></div> -->
-      
-
-    <!--  <div id="dots">
-          <a href="manifesto.html"><div class="redDot"></div></a>
-          <a href="tv.html"><div class="greenDot"></div></a>
-          <a href="fm.html"><div class="blueDot"></div></a>
-          <a href="archive.html"><div class="yellowDot"></div></a>
-    </div> -->
+      <div id="intromobile">
+              <h4> 
+                We invite you to join us for an afternoon of programming to celebrate the graduating students from Central Saint Martins’ Masters in Architecture.<br><br> 
+                It’s been a difficult year to wrap up our studies, but we have risen to the challenge, asking big and bold questions about the future of the built environment.<br><br> 
+                We present a number of short films, podcasts and performances live and direct from MArch HQ in Kings Cross. <br> <br> 
+                Please join us on the channels to the left for a live-stream of the event, and in the chatroom for questions.
+      </div>
 
       <div id="chatango" class="boxwhite chatangoWindow dragFolder">
         <div class="desktopWindowBody">
