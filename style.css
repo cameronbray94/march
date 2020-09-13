@@ -142,7 +142,7 @@ h3 {
 h4 {
   font-family: 'Agipo', sans-serif;
   font-weight: 1800;
-  font-size:30px;
+  font-size:25px;
   line-height: 35px;
   text-align: justify;
 }
@@ -157,7 +157,7 @@ h5 {
 
 h6 {
   font-family: 'European Teletext', sans-serif;
-  color: blue
+  color: blue;
   font-weight: 1800;
   font-size:30px;
   line-height: 35px;
@@ -175,6 +175,13 @@ h6 {
 } */
 
 p {
+  font-family: 'Agipo', sans-serif;
+  font-weight: 900;
+  color: black;
+  text-align: justify;
+}
+
+.p1 {
   font-family: 'Agipo', sans-serif;
   font-weight: 900;
   color: black;
@@ -480,6 +487,14 @@ a {
   z-index: 90;
 }
 
+.twitch-embed {
+  position:center;
+  overflow:hidden;
+  z-index: 90;
+  height: 1200px;
+  width: auto;
+}
+
 .audio-icon {
   display: none;
 }
@@ -730,9 +745,18 @@ a {
   text-align: left;
 }
 
+.myText2 {
+  padding: 10px;
+  text-align: center;
+}
+
 .myText > p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+.myText2 > p {
+  text-align: center;
 }
 
 .myTextnav {
@@ -753,7 +777,7 @@ a {
 #intro {
   position: absolute;
   z-index: 15;
-  top: 20%;
+  top: 15%;
   left: 25%;
   z-index:120
 }
@@ -867,8 +891,8 @@ a {
 }
 
 #schedule {
-  top: 70%;
-  left: 20%;
+  top: 10%;
+  left: 30%;
   position: absolute;
   z-index: 13;
 }
@@ -898,6 +922,20 @@ a {
   top: 38%;
   position: absolute;
   z-index: 10;
+}
+
+#soundcloud2 {
+  left: 60%;
+  top: 10%;
+  position: absolute;
+  z-index: 11;
+}
+
+#soundcloud3 {
+  left: 5%;
+  top: 50%;
+  position: absolute;
+  z-index: 12;
 }
 
 #countdown {
