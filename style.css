@@ -188,21 +188,10 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 910px) {
-  .p {
-    font-size: 15px;
-  }
-}
-
 .nav-item2 > a {
   color: black;
 }
 
-@media screen and (max-width: 910px) {
-  .nav-item2 {
-    font-size: 80px;
-  }
-}
 
 a:hover {
   color:#5d5d5d;
@@ -486,7 +475,6 @@ a {
   bottom: 20px;
   right: 20px;
   background-color: none;
-  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -758,20 +746,19 @@ a {
 
 #intro {
   position: absolute;
-  z-index: 15;
   top: 15%;
   left: 25%;
   z-index:120
 }
 
 #intromobile {
-  position: absolute;
-  top: 200px;
-  left: 20px;
-  right: 20px;
-  text-align: justify;
-  z-index: 15;
   width: 100%;
+  z-index:120;
+  display: flex;
+  margin-left:20px;
+  margin-right: 10px;
+  position: absolute;
+  text-align: justify;
 }
 
 #timer {
@@ -883,7 +870,7 @@ a {
 }
 
 #csmbbcmobile {
-  bottom: 5px;
+  bottom: 15px;
   right: 5px;
   position: absolute;
   z-index: 500;
@@ -976,19 +963,13 @@ a {
 }
 
 @media screen and (min-width: 910px) {
-  #csmbbcmobile {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 910px) {
   #intromobile {
     display: none;
   }
 }
 
 @media screen and (min-width: 910px) {
-  #timerbottomleft > #demo {
+  #csmbbcmobile {
     display: none;
   }
 }
@@ -1001,12 +982,6 @@ a {
 
 @media screen and (max-width: 1100px) {
   #chatango {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 910px) {
-  #boxempty {
     display: none;
   }
 }
