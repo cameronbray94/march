@@ -44,14 +44,32 @@
         (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
         </script>  -->
 
-        <div id="intro" class="boxwhite smallwindow dragFolder">
+        <div id="Marchis" class="boxempty">
           <div class="desktopWindowBody">
             <div class="myText">
                 <p>
-                    COMING SOON
+                    CSM MArch is ... <br>
+                    (click to see our websites)
             </div>
         </div>
       </div>
+
+      <div id="credits" class="boxempty">
+        <div class="desktopWindowBody">
+          <div class="myText">
+              <p>
+                  MArch.broadcast has been curated by  <a href="http://cameronbray.me" target="_blank"> Cameron Bray </a>
+          </div>
+      </div>
+    </div>
+
+      <div class="embeddedObservable" id="observablehq-6e8d34f1" style="width:100%"></div>
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@cameronbray/archive-placeholder.js?v=3";
+      const inspect = Inspector.into("#observablehq-6e8d34f1");
+      (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+      </script>
 
         <div id="csmbbc" class="imageContainer">
         <a href="https://www.instagram.com/csm_architecture_march/" target="_blank"> <img src="img/CSMBBC.png" alt="folder" style="width:160px"> </a>
