@@ -526,7 +526,7 @@ a {
   border-radius: 0px;
   border: 0px solid #353535;
   padding: 1em 1em;
-  background: whitesmoke;
+  background:#e5e5e5;
   box-shadow: 10px 10px 0px #636363;
   /* opacity: .9; */
   cursor: move;
@@ -870,7 +870,7 @@ a {
 }
 
 #csmbbcmobile {
-  bottom: 25px;
+  bottom: 5px;
   right: 5px;
   position: absolute;
   z-index: 500;
