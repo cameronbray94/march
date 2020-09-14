@@ -18,7 +18,8 @@
     <!-- All html files have a head ^^ above, and a body. Here! -->
 
     <div id="navbar">
-      <h1 class="nav-item2"> <a href="index.html">MArch.</a><span style="color: green"><a href="index.html">tv </a></span>
+      <h1 class="nav-item2"> 
+        <span style="color: grey"><a href="index.html">MArch.</a></span><span style="color: green"><a href="index.html">tv </a></span>
       </h1>
   </div>
 
@@ -27,7 +28,7 @@
       <div class="myText">
                 <h3> <span style="color: red"> <a href="manifesto.html"> SCHEDULE</a> <br> </span>
                      <span style="color: blue"> <a href="fm.html"> RADIO </a> <br> </span>
-                     <a href="archive.html"> ARCHIVE</a> <br>
+                     <span style="color: grey"><a href="archive.html"> ARCHIVE</a> <br> </span>
       </div>
    </div>
   </div>
@@ -68,10 +69,15 @@
                 }, 1000);
                 </script>
           </div>
+          
+   <!-- <div id="videoWithNoJs" class="videoWrapper">  
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LyW1lOHQL34?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen> </iframe>
+  </div> -->
 
-  <div class="twitchcontainer">  
+
+  <div id="videoWithNoJs" class="videoWrapper">
           <iframe
-          src="https://player.twitch.tv/?channel=quarantinestudio&parent=csmmar.ch&autoplay=true"
+          src="https://player.twitch.tv/?channel=quarantinestudio&parent=http://csmmar.ch/tv.html&autoplay=true"
           height="880px"
           width="1300px"
           frameborder="0px"
@@ -80,21 +86,21 @@
          </iframe>
   </div>
 
-<!--  <div class="twitchcontainer">
-<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
-<div id="<player div ID>"></div>
-<script type="text/javascript">
-  var options = {
-    width: 100%,
-    height: auto,
-    channel: "quarantinestudio",
-    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-    parent: ["csmmar.ch/tv.html"]
-  };
-  var player = new Twitch.Player("<player div ID>", options);
-  player.setVolume(0.5);
-</script>
-</div> -->
+    <!--  <div class="twitchcontainer">
+    <script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+    <div id="<player div ID>"></div>
+    <script type="text/javascript">
+      var options = {
+        width: 100%,
+        height: auto,
+        channel: "quarantinestudio",
+        // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+        parent: ["csmmar.ch/tv.html"]
+      };
+      var player = new Twitch.Player("<player div ID>", options);
+      player.setVolume(0.5);
+    </script>
+    </div> -->
 
       <div id="csmbbc" class="imageContainer">
         <a href="https://www.instagram.com/csm_architecture_march/" target="_blank"> <img src="img/CSMBBC.png" alt="folder" style="width:160px"> </a>
@@ -139,6 +145,38 @@
     }
     });
     });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        // - 1.78 is the aspect ratio of the video
+        // - This will work if your video is 1920 x 1080
+        // - To find this value divide the video's native width by the height eg 1920/1080 = 1.78
+        var aspectRatio = 1.78;
+
+        var video = $('#videoWithJs iframe');
+        var videoHeight = video.outerHeight();
+        var newWidth = videoHeight*aspectRatio;
+        var halfNewWidth = newWidth/2;
+
+        video.css({"width":newWidth+"px","left":"50%","margin-left":"-"+halfNewWidth+"px"});
+
+        });
+    </script>
+
+    <script>
+      $(window).on('resize', function() {
+
+        // Same code as on load        
+        var aspectRatio = 1.78;
+        var video = $('#videoWithJs iframe');
+        var videoHeight = video.outerHeight();
+        var newWidth = videoHeight*aspectRatio;
+        var halfNewWidth = newWidth/2;
+
+        video.css({"width":newWidth+"px","left":"50%","margin-left":"-"+halfNewWidth+"px"});
+
+        });
     </script>
 
 </body>
