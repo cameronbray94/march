@@ -751,7 +751,7 @@ a {
   z-index:120
 }
 
-#intromobile {
+#mobiletext {
   width: 100%;
   z-index:120;
   display: flex;
@@ -870,7 +870,7 @@ a {
 }
 
 #csmbbcmobile {
-  bottom: 15px;
+  bottom: 25px;
   right: 5px;
   position: absolute;
   z-index: 500;
@@ -963,7 +963,7 @@ a {
 }
 
 @media screen and (min-width: 910px) {
-  #intromobile {
+  #mobiletext {
     display: none;
   }
 }
