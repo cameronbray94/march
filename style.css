@@ -913,12 +913,12 @@ a {
   z-index: 12;
 }
 
-#chatangomobile {
-  left: 1px;
-  bottom: 1px;
-  position: absolute;
+/* #chatangomobile {
+  right: 20px;
+  bottom: 30px;
+  position: fixed;
   z-index: 12;
-}
+} */
 
 #schedule {
   top: 10%;
@@ -1013,12 +1013,27 @@ a {
 @media screen and (max-width: 910px) {
   #intro {
     display: absolute;
-    left: 0;
+    left: 10px;
     top: 0;
     font-size: 10px;
     margin: 0px auto;;
     margin-top: 200px;
-    width: 80%;
+    width: 90%;
+    text-align: justify;
+  }
+  #navbar {
+    top: 10px;
+  }
+  #navbar > .nav-item2 {
+    font-size: 25px;
+  }
+  h3  {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
