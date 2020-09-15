@@ -586,6 +586,11 @@ a {
   /* box-shadow: 0 0 0 2px #ff6101, 0 0 0 6px #ff6101; */
 }
 
+.navigationtv {
+  background-color: black;
+}
+
+
 .desktopWindowHeader {
   display: flex;
   flex-direction: row;
@@ -792,6 +797,15 @@ a {
   z-index: 200;
 }
 
+#navigationtv {
+  top: 20px;
+  left: 10px;
+  height: 175px;
+  width: 225px;
+  position: absolute;
+  z-index: 199;
+}
+
 #chatbox {
   top: 10%;
   left: 50%;
@@ -866,6 +880,13 @@ a {
 
 #csmbbc {
   top: 10px;
+  right: 10px;
+  position: absolute;
+  z-index: 500;
+}
+
+#csmbbc2 {
+  top: 20px;
   right: 10px;
   position: absolute;
   z-index: 500;
