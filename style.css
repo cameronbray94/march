@@ -574,8 +574,6 @@ a {
   cursor: move;
 }
 
-
-
 .boxnav {
   display: flex;
   flex-direction: column;
@@ -587,7 +585,7 @@ a {
 }
 
 .navigationtv {
-  background-color: black;
+  background-color: lightgrey;
 }
 
 
@@ -886,7 +884,7 @@ a {
 }
 
 #csmbbc2 {
-  top: 20px;
+  top: 25px;
   right: 10px;
   position: absolute;
   z-index: 500;
