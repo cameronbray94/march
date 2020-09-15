@@ -746,6 +746,7 @@ a {
   position: fixed;
   bottom: 0px;
   right: 1px;
+  font-size: 13px;
   z-index:120;
 }
 
