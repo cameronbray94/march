@@ -136,13 +136,21 @@
       </div>
     </div>
 
-    <div class="embeddedObservable" id="observablehq-6e8d34f1" style="width:100%"></div>
+    <div class="embeddedObservable" id="observablehq-d1ec11d5" style="width:100%"></div>
     <script type="module">
-    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    import define from "https://api.observablehq.com/@cameronbray/archive-placeholder.js?v=3";
-    const inspect = Inspector.into("#observablehq-6e8d34f1");
-    (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
-    </script>
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@cameronbray/archive-placeholder.js?v=3";
+      const inspect = Inspector.into("#observablehq-d1ec11d5");
+      (new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+      </script>
+
+    <!-- <div id="observablehq-d1ec11d5"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@cameronbray/archive-placeholder.js?v=3";
+const inspect = Inspector.into("#observablehq-d1ec11d5");
+(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+</script> -->
 
   <div id="footer">
     <div id="csmbbcmobile" class="imageContainer">
