@@ -1185,9 +1185,8 @@ a {
 @media screen and (max-width: 910px) {
   #timer {
     font-size: 50px;
-    top: 50px;
+    top: 10%;
     left: 2px;
-    text-align: center;
   }
 }
 
