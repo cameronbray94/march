@@ -1141,10 +1141,10 @@ a {
   }
   #namesmobile {
     display: absolute;
-    left: 10px;
+    left: 0px;
     top: 0;
     font-size: 12px;
-    margin: 0px auto;;
+    /* margin: 0px auto;; */
     margin-top: 200px;
     margin-bottom: 100px;
     width: 90%;
