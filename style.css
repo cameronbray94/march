@@ -298,6 +298,7 @@ span > a:hover {
   text-align: left;
   text-decoration: none;
   z-index: 300;
+  position: fixed;
 }
 
 .navcolour {
@@ -579,6 +580,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: left;
+  position: fixed;
   /* background: #ff6101;*/
   opacity: .95;
   /*  box-shadow: 9px 9px 0px #4a4a4a; */
@@ -766,7 +768,7 @@ a {
 }
 
 #credits2 {
-  position: fixed;
+  position: absolute;
   bottom: 10%;
   right: 5%;
   font-size: 13px;
@@ -774,7 +776,7 @@ a {
 }
 
 #showcaselink {
-  position: fixed;
+  position: absolute;
   bottom: 7%;
   left: 2%;
   font-size: 13px;
@@ -793,7 +795,7 @@ a {
 }
 
 #Marchis {
-  position: absolute;
+  position: fixed;
   left: 10px;
   top: 190px;
   z-index:120;
@@ -834,7 +836,7 @@ a {
 #navigation {
   top: 40px;
   left: 10px;
-  position: absolute;
+  position: fixed;
   z-index: 200;
 }
 
@@ -843,7 +845,7 @@ a {
   left: 10px;
   height: 175px;
   width: 225px;
-  position: absolute;
+  position: fixed;
   z-index: 199;
 }
 
@@ -931,14 +933,14 @@ a {
 #csmbbc {
   top: 10px;
   right: 10px;
-  position: absolute;
+  position: fixed;
   z-index: 500;
 }
 
 #csmbbc2 {
   top: 25px;
   right: 8px;
-  position: absolute;
+  position: fixed;
   z-index: 500;
 }
 
