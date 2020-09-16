@@ -1155,7 +1155,8 @@ a {
     left: 10px;
     top: 0;
     font-size: 12px;
-    margin: 0px auto;;
+    margin-right: 10px;
+    /* margin: 0px auto; */
     margin-top: 200px;
     margin-bottom: 100px;
     width: 90%;
@@ -1246,8 +1247,10 @@ a {
   #timer {
     font-size: 70px;
     top: 200px;
-    left: 2px;
-    text-align: center;
+    text-align: left;
+    left: 20px;
+    right:30px; 
+    margin: auto;
   }
 }
 
