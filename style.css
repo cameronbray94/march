@@ -786,7 +786,7 @@ a {
   display: absolute;
   box-align: center;
   top: 0;
-  font-size: 10px;
+  font-size: 12px;
   margin-left: 10px;
   margin-top: 140px;
   width: 90%;
@@ -982,7 +982,7 @@ a {
     display: absolute;
     box-align: center;
     top: 0;
-    font-size: 10px;
+    font-size: 12px;
     margin: 0px auto;;
     margin-top: 140px;
     width: 90%;
@@ -1066,6 +1066,9 @@ a {
   #remote {
     display: none;
   }
+  body {
+    overflow: hidden; /* Hide scrollbars */
+  }
 }
 
 @media screen and (min-width: 910px) {
@@ -1133,6 +1136,26 @@ a {
     width: 90%;
     text-align: justify;
   }
+  #namesmobile {
+    display: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 12px;
+    margin: 0px auto;;
+    margin-top: 200px;
+    width: 90%;
+    text-align: justify;
+  }
+  #schedulemobile {
+    display: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 12px;
+    margin: 0px auto;;
+    margin-top: 200px;
+    width: 90%;
+    text-align: center;
+  }
   #navbar {
     top: 10px;
   }
@@ -1195,4 +1218,3 @@ a {
   #chatango {
     display: none;
   }
-
