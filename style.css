@@ -382,6 +382,14 @@ a {
   z-index: -1;
  } 
 
+ .staticbackground2 {
+  width: 100%;
+  display: flex;
+  min-height: 100%;
+  max-width: 100%;
+  z-index: -1;
+ } 
+
 .imageContainer {
   float: center;
   display: flex;
@@ -1082,6 +1090,20 @@ a {
     top: 0; left: 0;
     background: url(img/backgroundgrey.jpg);
     background-color: lightgrey;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 910px;
+    z-index: -1;
+    overflow-y: auto;
+  }
+  .staticbackground2 {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    min-height: 150vh;
+    top: 0; left: 0;
+    background-color: black;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
