@@ -773,6 +773,14 @@ a {
   z-index:120;
 }
 
+#showcaselink {
+  position: fixed;
+  bottom: 7%;
+  left: 2%;
+  font-size: 13px;
+  z-index:120;
+}
+
 #namesmobile {
   text-align: left;
   display: absolute;
@@ -1095,6 +1103,9 @@ a {
     display:none
   }
   .embeddedObservable {
+    display:none
+  }
+  #showcaselink {
     display:none
   }
 }
