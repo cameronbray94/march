@@ -1026,6 +1026,12 @@ a {
   #navigationtv {
     display:none;
   }
+  #videoWithNoJs {
+    margin-top:200px;
+    margin: auto;
+    width:400px;
+    height:300px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
