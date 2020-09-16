@@ -819,6 +819,15 @@ a {
   z-index: 199;
 }
 
+#navigationtvmobile {
+  top: 30px;
+  left: 15px;
+  height: 110px;
+  width: 120px;
+  position: absolute;
+  z-index: 199;
+}
+
 #chatbox {
   top: 10%;
   left: 50%;
@@ -1008,7 +1017,13 @@ a {
   #csmbbc {
     display: none;
   }
+  #csmbbc2 {
+    display: none;
+  }
   #timerbottomright {
+    display:none;
+  }
+  #navigationtv {
     display:none;
   }
 }
@@ -1048,6 +1063,9 @@ a {
 
 @media screen and (min-width: 910px) {
   #schedulemobile {
+    display:none
+  }
+  #navigationtvmobile {
     display:none
   }
 }
