@@ -1159,10 +1159,14 @@ a {
     text-align: center;
   }
   #navbar {
-    top: 10px;
+    top: 5px;
   }
   #navbar > .nav-item2 {
     font-size: 25px;
+  }
+  h2  {
+    font-size: 80px;
+    line-height: 90px;
   }
   h3  {
     font-size: 18px;
@@ -1210,7 +1214,7 @@ a {
 @media screen and (max-width: 910px) {
   #timer {
     font-size: 50px;
-    top: 10px;
+    top: 200px;
     left: 2px;
     text-align: center;
   }
