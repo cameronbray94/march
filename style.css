@@ -1191,7 +1191,7 @@ a {
     font-size: 35px;
   }
   #navigation {
-    top: 20px;
+    top: 25px;
     left: 10px;
     position: fixed;
     z-index: 200;
@@ -1211,9 +1211,9 @@ a {
   #antenna {
     display: none;
   }
-  #soundcloud {
+  /* #soundcloud {
     display: none;
-  }
+  } */
   #soundcloud2 {
     display: none;
   }
