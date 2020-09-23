@@ -743,6 +743,14 @@ a {
   z-index:120
 }
 
+
+#twitchintro {
+  position: absolute;
+  top: 200px;
+  margin: auto;
+  z-index:120
+}
+
 #introfm {
   position: absolute;
   top: 13%;
@@ -1233,6 +1241,9 @@ a {
 
 @media screen and (min-width: 910px) {
   #csmbbcmobile {
+    display: none;
+  }
+  #twitchintro {
     display: none;
   }
 }
